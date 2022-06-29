@@ -1,0 +1,41 @@
+{
+  "name": "cs_203406",
+  "version": "1.0.0",
+  "description": "",
+  "proxy":"http://localhost:3001/api/user",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "start:test": "cross NODE_ENV=test node app.js",
+    "start:prod": "cross-env NODE_ENV=production nodemon app.js",
+    "start:dev": "cross-env NODE_ENV=development nodemon app.js",
+    "sequelize": "dotenv sequelize"
+  },
+  "author": "Daniel Ivan Flores Perez",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^18.0.0",
+    "bcrypt": "^5.0.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "jsonwebtoken": "^8.5.1",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.5-lts.1",
+    "nodemon": "^2.0.16",
+    "parsed": "^0.0.0",
+    "pg": "^8.7.3",
+    "pg-hstore": "^2.3.4",
+    "pool": "^0.4.1",
+    "sequelize": "^6.20.1",
+    "socket.io": "^4.5.1",
+    "type": "^2.6.0",
+    "uuid": "^8.3.2"
+  },
+  "engines": {
+    "node": "16.15.0"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3"
+  }
+}
